@@ -16,8 +16,111 @@ body,html{
 ul,ol{
   list-style: none;
 }
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+  color: #fff;
+  text-decoration: none;
+}
+
 .panel-title{
   height: 40px;
   line-height: 40px;
   font-size: 20px;
 }
+
+.lt-aside {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222D32;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt-aside.hidemenu{
+  left: -200px;
+}
+.lt-aside .brand{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #367FA9;
+}
+.lt-aside .user{
+  padding-top: 30px;
+  height: 180px;
+}
+.lt-aside .user img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; 
+}
+.lt-aside .user p{
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center; 
+}
+.lt-aside .nav a{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 40px;
+  border-left: 3px solid transparent
+}
+.lt-aside .nav .child a{
+  padding-left: 60px;
+}
+.lt-aside .nav a.current{
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+
+.lt-main{
+  padding-left: 180px;
+  padding-top: 50px;
+  height: 1000px;
+  background-color: pink;
+  transition: all 1s;
+}
+.lt-main.hidemenu{
+  padding-left: 0;
+}
+.lt-main .lt-topbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 180px;
+  background-color: #3C8DBC;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  transition: all 1s;
+}
+.lt-main .lt-topbar.hidemenu{
+  padding-left: 0;
+}
+.lt-main .lt-topbar a{
+  width: 50px;
+  height: 50px;
+  font-size: 16px;  
+  text-align: center;
+}
+
+.breadcrumb{
+  margin-top: 20px;
+}
+.breadcrumb a{
+  color:  #337ab7;
+}
+
+
+
