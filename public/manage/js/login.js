@@ -69,7 +69,7 @@ $(function() {
     // 阻止默认的表单提交
     e.preventDefault();
 
-    //console.log($('#form').serialize());
+    console.log($('#form').serialize());
 
     // 通过 ajax 进行登录请求
     $.ajax({
