@@ -9,6 +9,9 @@ body,html{
 .mt-150{
   margin-top: 150px;
 }
+.mb-20{
+  margin-bottom: 20px;
+}
 *{
   margin: 0;
   padding: 0;
@@ -126,6 +129,8 @@ a:active{
   text-align: center;
   vertical-align: middle;
 }
+
+
 
 
 

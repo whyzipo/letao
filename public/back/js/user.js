@@ -43,7 +43,6 @@ $(function(){
         // console.log(info);
         if(info.success){
           $('#userModal').modal('hide');
-          currentPage = 1;
           render();
         }
       }
