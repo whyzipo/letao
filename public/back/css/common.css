@@ -87,8 +87,7 @@ a:active{
 .lt-main{
   padding-left: 180px;
   padding-top: 50px;
-  height: 1000px;
-  background-color: pink;
+  height: 100%;
   transition: all 1s;
 }
 .lt-main.hidemenu{
@@ -120,6 +119,12 @@ a:active{
 }
 .breadcrumb a{
   color:  #337ab7;
+}
+
+.table.table-hover th,
+.table.table-hover td{
+  text-align: center;
+  vertical-align: middle;
 }
 
 
