@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.lt-content {
+  position: relative;
+  min-width: 320px;
+  max-width: 640px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+.lt-content .lt-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 45px;
+  background-color: #006699;
+  height: 45px;
+}
+.lt-content .lt-header .icon-left,
+.lt-content .lt-header .icon-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+.lt-content .lt-header .icon-left {
+  right: auto;
+  left: 0;
+}
+.lt-content .lt-header h3 {
+  line-height: 45px;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+}
+.lt-content .lt-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  background-color: #006699;
+  width: 100%;
+  overflow: hidden;
+}
+.lt-content .lt-footer ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.lt-content .lt-footer ul li a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 8px;
+}
+.lt-content .lt-footer ul li a p {
+  color: #fff;
+  margin: 0;
+}
+.lt-content .lt-footer ul li a.current {
+  color: orange;
+}
+.lt-content .lt-footer ul li a.current p {
+  color: orange;
+}
+.lt-content .lt-main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
