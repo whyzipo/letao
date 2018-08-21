@@ -1,0 +1,47 @@
+.lt-main{
+  display: flex;
+  .lt-cate-left{
+    width: 90px;
+    height: 100%;
+    position: relative;
+    ul{
+      a{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        width: 90px;
+        text-align: center;
+        color: #666;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #E3E4E5;
+      }
+      a.current{
+        background-color: #fff;
+        border-right: 0;
+      }
+    }
+  }
+  .lt-cate-right{
+    flex: 1;
+    height: 100%;
+    position: relative;
+    ul{
+      li{
+        float: left;
+        width: 33.33%;
+        a{
+          display: block;
+          img{
+            width: 70px;
+            height: 50px;
+            margin: 0 auto;
+          }
+          p{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
