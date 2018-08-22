@@ -70,8 +70,7 @@ $(function(){
     render();
     $('.search-input').val("");
 
-    location.href = "searchList.html"
-
+    location.href = "searchList.html?key="+key;
   })
 
 

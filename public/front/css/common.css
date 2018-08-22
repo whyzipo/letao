@@ -90,3 +90,53 @@ img {
   height: 100%;
   position: relative;
 }
+.lt-content .lt-main .lt-search {
+  padding: 10px;
+  position: relative;
+}
+.lt-content .lt-main .lt-search .search-input {
+  height: 34px;
+  line-height: 34;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #007AFF;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 55px;
+}
+.lt-content .lt-main .lt-search .search-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 0 5px 5px 0;
+}
+.lt-content .lt-main .lt-pro {
+  padding: 10px;
+}
+.lt-content .lt-main .lt-pro ul li {
+  float: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 48%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.lt-content .lt-main .lt-pro ul li img {
+  width: 100px;
+  height: 150px;
+  margin: 0 auto;
+}
+.lt-content .lt-main .lt-pro ul li .desc {
+  text-align: left;
+  height: 40px;
+}
+.lt-content .lt-main .lt-pro ul li .price {
+  color: red;
+}
+.lt-content .lt-main .lt-pro ul li .oldprice {
+  text-decoration: line-through;
+}
+.lt-content .lt-main .lt-pro ul li:nth-child(2n+1) {
+  margin-right: 4%;
+}
