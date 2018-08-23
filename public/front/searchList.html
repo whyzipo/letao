@@ -31,9 +31,8 @@
             <a href="#">折扣<i class="fa fa-angle-down"></i></a>
           </div>
           <div class="lt-pro">
-              <ul class="mui-clearfix">
-                
-              </ul>
+             
+                <!-- <div class="loading"></div> -->
           </div>
         </div>
       </div>
@@ -71,6 +70,7 @@
   </div>
 
     <script type="text/html" id="proTpl">
+    <ul class="mui-clearfix">
     {{each data v i}}
       <li>
         <img src="./images/product.jpg" alt="">
@@ -82,6 +82,7 @@
         <button class="mui-btn mui-btn-primary">立即购买</button>
       </li>
     {{/each}}
+    </ul>
     </script>
 
 

@@ -1,11 +1,12 @@
-
-
 $(function(){
+
+  
   var key = getSearch('key');
   // console.log(key);
   $('.search-input').val(key);
   render();
   function render(){
+    $('.lt-pro').html('<div class="loading"></div>');
     var params ={};
     params.proName = $('.search-input').val();
     params.page = 1;
@@ -18,18 +19,20 @@ $(function(){
       params[sortName] = sortValue;
     }
 
+    setTimeout(function(){
+      $.ajax({
+        type:'get',
+        url:'/product/queryProduct',
+        data:params,
+        dataType:'json',
+        success:function(info){
+          console.log(info);
+          var htmlStr = template('proTpl',info);
+          $('.lt-pro').html(htmlStr);
+        }
+      })
 
-    $.ajax({
-      type:'get',
-      url:'/product/queryProduct',
-      data:params,
-      dataType:'json',
-      success:function(info){
-        console.log(info);
-        var htmlStr = template('proTpl',info);
-        $('.lt-pro ul').html(htmlStr);
-      }
-    })
+    },500)
   }
 
   $('.search-btn').on('click',function(){
@@ -58,7 +61,7 @@ $(function(){
 
   $('.lt-sort a[data-type]').click(function(){
     if($(this).hasClass('current')){
-      $(this).find('i').toggleClass('fa-angle-up').toggleClass('fa--angle-down');
+      $(this).find('i').toggleClass('fa-angle-up').toggleClass('fa-angle-down');
     }else{
       $(this).addClass('current').siblings().removeClass('current');
     }
