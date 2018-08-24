@@ -30,15 +30,17 @@ $(function(){
 
 
   $('.addToCart').on('click',function(){
+    console.log(111);
+    
     var size = $('.lt-main .pro-size span.current').text();
     var num = $('.pro-num mui-numbox-input').val();
     if(!size){
-      mui.totast('请选择尺码');
+      mui.toast('请选择尺码');
       return;
     }
     $.ajax({
       type:'post',
-      url:'/cast/addCart',
+      url:'/cart/addCart',
       data:{
         productId:productId,
         size:size,

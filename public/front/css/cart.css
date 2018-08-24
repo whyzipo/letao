@@ -1,0 +1,26 @@
+#mypro-info .cart-info {
+  height: 110px;
+  padding: 10px 15px;
+}
+#mypro-info .cart-info .mui-table-cell {
+  display: block;
+}
+#mypro-info .cart-info .cart-img {
+  width: 60px;
+  height: 90px;
+  float: left;
+}
+#mypro-info .cart-info .cart-desc {
+  height: 90px;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+#mypro-info .cart-info .cart-desc .pro-name {
+  color: #000;
+}
+#mypro-info .cart-info .cart-desc .price {
+  color: red;
+}
+#mypro-info .cart-info .cart-desc .oldPrice {
+  text-decoration: line-through;
+}
