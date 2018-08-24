@@ -6,7 +6,6 @@ $(function(){
   $('.search-input').val(key);
   render();
   function render(){
-    $('.lt-pro').html('<div class="loading"></div>');
     var params ={};
     params.proName = $('.search-input').val();
     params.page = 1;
@@ -26,7 +25,7 @@ $(function(){
         data:params,
         dataType:'json',
         success:function(info){
-          console.log(info);
+          // console.log(info);
           var htmlStr = template('proTpl',info);
           $('.lt-pro').html(htmlStr);
         }
@@ -34,6 +33,8 @@ $(function(){
 
     },500)
   }
+
+
 
   $('.search-btn').on('click',function(){
     var key = $('.search-input').val().trim();
@@ -59,6 +60,7 @@ $(function(){
   })
 
 
+  
   $('.lt-sort a[data-type]').click(function(){
     if($(this).hasClass('current')){
       $(this).find('i').toggleClass('fa-angle-up').toggleClass('fa-angle-down');

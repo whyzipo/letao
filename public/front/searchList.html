@@ -73,13 +73,15 @@
     <ul class="mui-clearfix">
     {{each data v i}}
       <li>
-        <img src="./images/product.jpg" alt="">
-        <p class="mui-ellipsis-2 desc">{{v.proName}}</p>
-        <p>
-          <span class="price">¥{{v.price}}</span>
-          <span class="oldprice">¥{{v.oldPrice}}</span>
-        </p>
-        <button class="mui-btn mui-btn-primary">立即购买</button>
+        <a href="product.html?productId={{v.id}}" data-id="{{v.id}}">
+          <img src="./images/product.jpg" alt="">
+          <p class="mui-ellipsis-2 desc">{{v.proName}}</p>
+          <p>
+            <span class="price">¥{{v.price}}</span>
+            <span class="oldprice">¥{{v.oldPrice}}</span>
+          </p>
+          <button class="mui-btn mui-btn-primary">立即购买</button>
+        </a>  
       </li>
     {{/each}}
     </ul>
